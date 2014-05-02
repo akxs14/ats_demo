@@ -6,5 +6,6 @@ end
 
 post '/register' do
   puts "#{params}"
+  redirect '/index.html'
 end
 
