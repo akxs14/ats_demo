@@ -10,3 +10,6 @@ post '/register' do
   redirect '/index.html'
 end
 
+get '/user/:id' do
+  DB.get_user(params["id"])
+end
