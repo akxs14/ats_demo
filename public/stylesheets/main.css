@@ -1,12 +1,18 @@
 
 fieldset
 {
-  width: 160px;
+  width: 425px;
 }
 
 #registration_form
 {
-  width: 150px;
+  width: 425px;
+}
+
+#map-canvas
+{
+  width: 425px;
+  height: 425px;
 }
 
 select

@@ -13,15 +13,19 @@
         <legend>Your personal data:</legend>
         <label for="first_name">First Name:</label>
         <input type="text" name="first_name">
+        <br />
 
         <label for="last_name">Last Name:</label>
         <input type="text" name="last_name">
+        <br />
 
         <label for="email">Email:</label>
         <input type="email" name="email">
+        <br />
 
-        <label for="location">Location:</label>
-        <input type="text" name="location">
+        <label for="location">Location (click on the map)</label>
+        <input type="text" name="location" id="location">
+        <br />
 
         <label for="genre">Favourite Music Genre:</label>
         <select name="genre">
@@ -34,6 +38,11 @@
         <input type="submit" value="Submit">
       </fieldset>
     </form>
+    <div id="map-canvas"/>
 
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCat90VnmeRLQpAqbg-7kortIeIK3n4bCg&sensor=true">
+    </script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
   </body>
 </html>

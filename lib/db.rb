@@ -21,7 +21,7 @@ class DB
   def self.get_user user_id
     db = get_db_conn
     db.execute("SELECT * FROM users WHERE id = ?", [user_id]) do |row|
-      return row ? pack_json(row) : {user: "not found"}.to_json
+      return pack_json(row)
     end
   end
 
