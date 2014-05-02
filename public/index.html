@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello! ATS Cloud Personalization Demo</title>
+    <style type="text/css">
+      @import url("stylesheets/main.css");
+    </style>
+  </head>
+  <body>
+
+    <form action="/new_user" id="registration_form">
+      <fieldset>
+        <legend>Your personal data:</legend>
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name">
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+
+        <label for="location">Location:</label>
+        <input type="text" name="location">
+
+        <label for="genre">Favourite Music Genre:</label>
+        <select name="genre">
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="classical">Classical</option>
+        </select>
+        <br />
+
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+  </body>
+</html>
