@@ -4,6 +4,7 @@ get '/' do
   redirect '/index.html'
 end
 
-get '/hi' do
-  "hello!"
+post '/register' do
+  puts "#{params}"
 end
+
