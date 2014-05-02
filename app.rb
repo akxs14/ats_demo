@@ -1,11 +1,12 @@
 require 'sinatra'
+require_relative 'lib/db'
 
 get '/' do
   redirect '/index.html'
 end
 
 post '/register' do
-  puts "#{params}"
+  DB.register_user(params)
   redirect '/index.html'
 end
 
